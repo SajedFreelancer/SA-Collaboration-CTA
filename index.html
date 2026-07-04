@@ -72,10 +72,11 @@ margin-bottom: 18px;
 }
 /* GRID */
 .main-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 10px;
-margin-bottom: 18px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr; /* نسبت بهتر */
+    gap: 10px; /* فاصله حدود ۱ سانت */
+    margin: 0 auto; /* مرکز کردن کل گرید */
+    max-width: 1200px; /* جلوگیری از کش آمدن در زوم */
 }
 
 @media(max-width:900px){
