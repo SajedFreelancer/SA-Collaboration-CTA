@@ -11,7 +11,7 @@
 
   
   <meta charset="UTF-8">
-  <title>SA1-Collaboration-CTA</title>
+  <title>SA-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -401,6 +401,9 @@
       border-radius: 50%;
       object-fit: cover;
     }
+    .social-link img {
+      filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.15));
+    }
     .social-link {
       display: flex;
       flex-direction: column;
@@ -416,6 +419,9 @@
       background: rgba(255, 255, 255, 0.06);
       border-color: rgba(59, 180, 255, 0.7);
       transform: translateY(-1px);
+    }
+    .social-link img:hover {
+      filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.25));
     }
     .profile-medal {
       font-size: 10px;
@@ -582,7 +588,7 @@
     @media (max-width: 768px) {
     .tree-container {
         top: 100px;
-        right: 20px;
+        right: 50px;
         transform: none;
         z-index: 2;
       }
