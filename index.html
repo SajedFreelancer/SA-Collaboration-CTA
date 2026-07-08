@@ -11,7 +11,7 @@
 
   
   <meta charset="UTF-8">
-  <title>SA1-Collaboration-CTA</title>
+  <title>SA2-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -241,24 +241,6 @@
       backdrop-filter: blur(2px);
       position: relative;
       overflow: hidden;
-      cursor: pointer;
-      transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
-    }
-    .package-card::before {
-      content: "";
-      position: absolute;
-      inset: -40%;
-      background: radial-gradient(circle at 0% 0%, rgba(59, 180, 255, 0.18), transparent 60%);
-      opacity: 0;
-      transition: opacity var(--transition-fast);
-    }
-    .package-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 20px 46px rgba(0, 0, 0, 0.9);
-      border-color: rgba(246, 196, 83, 0.7);
-    }
-    .package-card:hover::before {
-      opacity: 1;
     }
     .package-title {
       font-size: 11px;
