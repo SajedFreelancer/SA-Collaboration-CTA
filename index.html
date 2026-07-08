@@ -11,7 +11,7 @@
 
   
   <meta charset="UTF-8">
-  <title>SA3-Collaboration-CTA</title>
+  <title>SA-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -312,18 +312,24 @@
       overflow: visible;
       z-index: 3;
     }
-    .cosmic-tree {
-      width: 430px;
-      opacity: 1;
-      filter: none;
+    .tree-wrapper {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
     }
     .tree-container {
-      position: fixed;
+      position: absolute;
       right: 0;
       top: 45%;
       transform: translateY(-45%);
       z-index: 1;
       pointer-events: none;
+    }
+    .cosmic-tree {
+      width: 430px;
+      opacity: 1;
+      filter: none;
     }
     .right-panel-content {
       position: static;
@@ -583,6 +589,11 @@
 </head>
 <body>
   <div class="page">
+    <div class="tree-wrapper">
+      <div class="tree-container">
+        <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Tree%20idea.png?raw=true" class="cosmic-tree">
+      </div>
+    </div>
     <section class="main-grid">
       <div class="left-panel">
         <div class="left-title">Collaboration with freelance work platforms</div>
@@ -635,9 +646,6 @@
         </div>
       </div>
       <div class="right-panel">
-        <div class="tree-container">
-          <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Tree%20idea.png?raw=true" alt="cosmic-tree" class="cosmic-tree">
-        </div>
         <div class="right-panel-content">
           <div class="profile-card">
             <div class="profile-top">
