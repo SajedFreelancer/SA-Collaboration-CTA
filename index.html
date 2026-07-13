@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA4-Collaboration-CTA</title>
+  <title>SA2-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -221,6 +221,26 @@
     }
     .platform-card:hover ~ #packagesOverlay {
       display: flex;
+    }
+    #packagesOverlay {
+      display: none;
+      opacity: 0;
+      transform: translateX(-50%) scale(0.90);
+      filter: blur(10px);
+      box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+      transition:
+        opacity 0.45s ease,
+        transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+        filter 0.45s ease,
+        box-shadow 0.45s ease;
+    }
+
+    .platform-card:hover ~ #packagesOverlay {
+      display: flex;
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+      filter: blur(0px);
+      box-shadow: 0 0 22px rgba(255, 255, 255, 0.18);
     }
     .packages-row {
       display: grid;
