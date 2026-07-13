@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA1-Collaboration-CTA</title>
+  <title>SA-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -323,8 +323,8 @@
     }
     .packages-overlay {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 80px;
+      left: -20px;
       width: 100%;
       padding: 20px;
       display: flex;
@@ -342,11 +342,19 @@
       gap: 12px;
     }
     .packages-overlay .package-card {
-      width: 180px;
-      padding: 8px;
+      width: 300px;
+      padding: 10px;
     }
     .packages-overlay .package-image {
-      padding-top: 90%;
+      padding-top: 140%;
+    }
+    .packages-overlay .package-card:hover {
+      transform: none !important;
+      box-shadow: none !important;
+      border-color: transparent !important;
+    }
+    .packages-overlay .package-card::before {
+      display: none !important;
     }
     .collab2-label {
       font-size: 18px;
