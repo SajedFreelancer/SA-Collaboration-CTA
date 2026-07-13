@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA1-Collaboration-CTA</title>
+  <title>SA-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -165,6 +165,7 @@
     }
     .platform-card {
       position: relative;
+      height: 260px;
       border-radius: var(--radius-md);
       padding: 10px 20px 20px;
       background: rgba(255, 255, 255, 0.06);
@@ -226,8 +227,10 @@
       font-size: 14px;
       color: rgba(255, 255, 255, 0.85);
       opacity: 0;
-      max-height: 0;
+      max-height: 120px;
+      padding-right: 6px;
       overflow: hidden;
+      overflow-y: auto;
       transition: opacity var(--transition-fast), max-height var(--transition-fast);
     }
     .platform-card:hover .platform-details {
@@ -395,7 +398,7 @@
       font-weight: 400;
     }
     .profile-text {
-      font-size: 13px;
+      font-size: 14px;
       text-align: center;
       line-height: 1.55;
       margin-bottom: 26px;
