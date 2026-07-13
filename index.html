@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA-Collaboration-CTA</title>
+  <title>SA1-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -74,21 +74,6 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 18px;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .brand-text-main {
-      font-size: 15px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-    .brand-text-sub {
-      font-size: 11px;
-      color: rgba(255, 255, 255, 0.85);
     }
     .header-right {
       display: flex;
@@ -149,7 +134,7 @@
       text-align: center;
     }
     .left-panel {
-      margin-top: 20px;
+      margin-top: 40px;
       z-index: 1;
     }
     .platform-row {
@@ -233,81 +218,6 @@
     .platform-card:hover .platform-details {
       opacity: 1;
       max-height: 200px;
-    }
-    .collab1-label {
-      font-size: 18px;
-      font-weight: 700;
-    }
-    .packages-row {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 6px;
-    }
-    @media (max-width: 900px) {
-      .packages-row {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
-    @media (max-width: 700px) {
-      .packages-row {
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 14px; 
-          margin-top: 12px;
-      }
-      .package-card {
-          margin: 0; 
-          padding: 12px;
-      }
-      .package-image img {
-          padding: 0;
-          margin: 0;
-      }
-    }
-    .package-card {
-      border-radius: var(--radius-md);
-      padding: 10px 11px;
-      background: transparent;
-      border: none !important;
-      box-shadow: none !important;
-      backdrop-filter: blur(2px);
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-      transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
-    }
-    .package-card::before {
-      content: "";
-      position: absolute;
-      inset: -40%;
-      background: radial-gradient(circle at 0% 0%, rgba(59, 180, 255, 0.18), transparent 60%);
-      opacity: 0;
-      transition: opacity var(--transition-fast);
-    }
-    .package-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 20px 46px rgba(0, 0, 0, 0.9);
-      border-color: rgba(246, 196, 83, 0.7);
-    }
-    .package-card:hover::before {
-      opacity: 1;
-    }
-    .package-image {
-      width: 100%;
-      position: relative;
-      overflow: hidden;
-      border-radius: var(--radius-md);
-      padding-top: 140%;
-    }
-    .package-image img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      border-radius: var(--radius-md);
-      object-position: center center;
     }
     .collab2-label {
       font-size: 18px;
