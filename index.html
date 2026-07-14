@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA1-Collaboration-CTA</title>
+  <title>SA-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -343,14 +343,17 @@
       flex-direction: column;
       gap: 18px;
       align-items: center;
+      flex-shrink: 0;
       max-width: 200px;
       margin: 0 auto;
     }
     .hex-row-bottom {
-      transform: translateY(40px) translateX(60px);
+      position: relative;
+      left: 75px;
+      top: 22px;
     }
     .hex-card.blue .hex-face {
-      background: rgba(0, 140, 255, 0.35);
+      background: rgba(0, 140, 255, 0.85);
       border-color: rgba(0, 140, 255, 0.55);
     }
     .hex-card.purple .hex-face {
@@ -396,10 +399,10 @@
       justify-content: center;
       text-align: center;
       border-radius: 18px;
-      background: rgba(255, 255, 255, 0.12);
+      background: rgba(0,0,0,0.25);
       border: 1px solid rgba(255, 255, 255, 0.35);
       backdrop-filter: blur(18px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
       color: #e9f5f5;
       clip-path: polygon(
         25% 0%,
