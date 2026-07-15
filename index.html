@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA3-Collaboration-CTA</title>
+  <title>SA-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -360,7 +360,6 @@
     }
     .hex-row-bottom {
       margin-top: 12px;
-      transform: translateY(10px);
     }
     .hex-card {
       width: 180px;
@@ -374,7 +373,7 @@
       position: relative;
       transform-style: preserve-3d;
       transition: transform 0.6s ease;
-      transform: rotate(90deg);
+      transform: rotate(0deg);
     }
     .hex-card:hover .hex-inner {
       transform: rotateY(180deg);
@@ -382,26 +381,6 @@
     .hex-face {
       position: absolute;
       inset: 0;
-      padding: 14px 12px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      border-radius: 18px;
-      background: rgba(0,0,0,0.25);
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      backdrop-filter: blur(18px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-      color: #e9f5f5;
-      clip-path: polygon(
-        25% 0%,
-        75% 0%,
-        100% 50%,
-        75% 100%,
-        25% 100%,
-        0% 50%
-      );
     }
     .step-1 .hex-front {
       background-image: url('https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Cooperation%20%20steps%201%20blue.png?raw=true');
@@ -468,12 +447,7 @@
     }
     .hex-back {
       backface-visibility: hidden;
-      transform: rotateY(180deg) rotate(90deg);
-    }
-    .hex-back p {
-      font-size: 12px;
-      line-height: 1.4;
-      color: #e3f4f4;
+      transform: rotateY(180deg) rotate(0deg);
     }
     @media (max-width: 768px) {
       .hex-card {
@@ -482,9 +456,6 @@
       }
       .hex-row-bottom {
         transform: translateY(30px);
-      }
-      .hex-back p {
-        font-size: 11px;
       }
     }
     .right-panel {
@@ -876,124 +847,45 @@
         <div class="collab2-label">Cooperation stages</div>
         <div class="process-hex-grid">
           <div class="hex-row">
-            <div class="hex-card">
-              <div class="hex-card step-1">
-                <div class="hex-card blue">
-                  <div class="hex-inner">
-                    <div class="hex-face hex-front">
-                      <div class="hex-number"></div>
-                      <div class="hex-icon"></div>
-                      <div class="hex-title">Understanding Project Goals & Needs</div>
-                    </div>
-                    <div class="hex-face hex-back">
-                      <div class="hex-number-back"></div>
-                      <p>
-                        We analyze your brand, goals, audience, and project needs to ensure a clear direction.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <div class="hex-card step-1">
+              <div class="hex-inner">
+                <div class="hex-face hex-front"></div>
+                <div class="hex-face hex-back"></div>
               </div>
             </div>
-            <div class="hex-card">
-              <div class="hex-card step-2">
-                <div class="hex-card blue">
-                  <div class="hex-inner">
-                    <div class="hex-face hex-front">
-                      <div class="hex-number"></div>
-                      <div class="hex-icon"></div>
-                        <div class="hex-title">Package Selection & Collaboration Agreement</div>
-                    </div>
-                    <div class="hex-face hex-back">
-                      <div class="hex-number-back"></div>
-                      <p>
-                        You choose the package that fits your goals, and we finalize the collaboration terms.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <div class="hex-card step-2">
+              <div class="hex-inner">
+                <div class="hex-face hex-front"></div>
+                <div class="hex-face hex-back"></div>
               </div>
             </div>
-            <div class="hex-card">
-              <div class="hex-card step-3">
-                <div class="hex-card purple">
-                  <div class="hex-inner">
-                    <div class="hex-face hex-front">
-                      <div class="hex-number"></div>
-                      <div class="hex-icon"></div>
-                      <div class="hex-title">Order Confirmation & Initial Deposit</div>
-                    </div>
-                    <div class="hex-face hex-back">
-                      <div class="hex-number-back">03</div>
-                      <p>
-                        The project officially starts after confirming the order and receiving the initial deposit.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <div class="hex-card step-3">
+              <div class="hex-inner">
+                <div class="hex-face hex-front"></div>
+                <div class="hex-face hex-back"></div>
               </div>
             </div>
-          </div>
-          <div class="hex-row hex-row-bottom">
-            <div class="hex-card">
-              <div class="hex-card step-4">
-                <div class="hex-card purple">
-                  <div class="hex-inner">
-                    <div class="hex-face hex-front">
-                      <div class="hex-number"></div>
-                      <div class="hex-icon"></div>
-                      <div class="hex-title">Early Etudes & Creative Directions</div>
-                    </div>
-                    <div class="hex-face hex-back">
-                      <div class="hex-number-back"></div>
-                      <p>
-                        You receive early sketches and creative directions to explore the visual identity.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>  
-            </div>
-            <div class="hex-card">
-              <div class="hex-card step-5">
-                <div class="hex-card accent">
-                  <div class="hex-inner">
-                    <div class="hex-face hex-front">
-                      <div class="hex-number"></div>
-                      <div class="hex-icon"></div>
-                      <div class="hex-title">Review & Client Revisions</div>
-                    </div>
-                    <div class="hex-face hex-back">
-                      <div class="hex-number-back"></div>
-                      <p>
-                        We refine the selected concept based on your feedback until it reaches perfection.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <div class="hex-card step-4">
+              <div class="hex-inner">
+                <div class="hex-face hex-front"></div>
+                <div class="hex-face hex-back"></div>
               </div>
             </div>
-            <div class="hex-card">
-              <div class="hex-card step-6">
-                <div class="hex-card accent">
-                  <div class="hex-inner">
-                    <div class="hex-face hex-front">
-                      <div class="hex-number"></div>
-                      <div class="hex-icon"></div>
-                      <div class="hex-title">Final Output & Project Delivery</div>
-                    </div>
-                    <div class="hex-face hex-back">
-                      <div class="hex-number-back"></div>
-                      <p>
-                        You receive all agreed-upon files, formats, and final results ready to use on multiple platforms.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <div class="hex-card step-5">
+              <div class="hex-inner">
+                <div class="hex-face hex-front"></div>
+                <div class="hex-face hex-back"></div>
+              </div>
+            </div>
+            <div class="hex-card step-6">
+              <div class="hex-inner">
+                <div class="hex-face hex-front"></div>
+                <div class="hex-face hex-back"></div>
               </div>
             </div>
           </div>
         </div>
+      </div>
       <div class="right-panel">
         <div class="tree-container">
           <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Tree%20idea.png?raw=true" alt="cosmic-tree" class="cosmic-tree">
