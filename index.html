@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA-Collaboration-CTA</title>
+  <title>SA1-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -809,6 +809,28 @@
       .hex-card.step-4 { order: 4; }
       .hex-card.step-5 { order: 5; }
       .hex-card.step-6 { order: 6; }
+    }
+    @media (max-width: 900px) {
+      .hex-card::before {
+        clip-path: polygon(
+          50% 0%,
+          100% 22%,
+          100% 78%,
+          50% 100%,
+          0% 78%,
+          0% 22%
+        );
+      }
+      .hex-face {
+        clip-path: polygon(
+          50% 0%,
+          100% 22%,
+          100% 78%,
+          50% 100%,
+          0% 78%,
+          0% 22%
+        );
+      }
     }
     @media (max-width: 900px) {
       .packages-overlay .package-card {
