@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA1-Collaboration-CTA</title>
+  <title>SA-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -771,6 +771,9 @@
         width: 100%;
         margin: 0 auto;
         padding: 0;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
       }
       .hex-row,
       .hex-row-bottom {
@@ -789,6 +792,8 @@
         min-height: 340px;
         padding: 0;
         position: relative;
+        scroll-snap-align: center;
+        scroll-margin-top: 50vh;
       }
       .hex-inner,
       .hex-face {
@@ -809,6 +814,9 @@
       .hex-card.step-4 { order: 4; }
       .hex-card.step-5 { order: 5; }
       .hex-card.step-6 { order: 6; }
+      .hex-card:target .hex-inner {
+        transform: rotateY(180deg);
+      }
     }
     @media (max-width: 900px) {
       .hex-card::before {
