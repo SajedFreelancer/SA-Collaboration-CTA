@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA2-Collaboration-CTA</title>
+  <title>SA-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -789,6 +789,8 @@
         min-height: 340px;
         padding: 0;
         position: relative;
+        view-timeline-name: --card;
+        view-timeline-axis: block;
       }
       .hex-inner,
       .hex-face {
@@ -811,6 +813,15 @@
       .hex-card.step-6 { order: 6; }
       .hex-card:in-view .hex-inner {
         transform: rotateY(180deg);
+      }
+      .hex-card .hex-inner {
+        animation-timeline: --card;
+        animation-name: flip;
+        animation-range: entry 50% cover 50%;
+      }
+      @keyframes flip {
+        from { transform: rotateY(0deg); }
+        to   { transform: rotateY(180deg); }
       }
     }
     @media (max-width: 900px) {
