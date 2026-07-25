@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA1-Collaboration-CTA</title>
+  <title>SA-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/webp" href="favicon.webp">
   <link rel="icon" sizes="64x64" href="favicon.webp">
@@ -370,6 +370,21 @@
       gap: 30px;
       justify-content: center;
     }
+    .hex-card::before {
+      content: "";
+      position: absolute;
+      inset: -8px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+      );
       z-index: -1;
      }
     .hex-card {
