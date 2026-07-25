@@ -823,27 +823,10 @@
       .hex-card.step-6 { order: 6; }
     }
     @media (max-width: 900px) {
-      .hex-card::before {
-        inset: -4px;
-        clip-path: polygon(
-          50% 0%,
-          100% 22%,
-          100% 78%,
-          50% 100%,
-          0% 78%,
-          0% 22%
-        );
-      }
+      .hex-card::before,
       .hex-face {
-        clip-path: polygon(
-          50% 0%,
-          100% 20%,
-          100% 80%,
-          50% 100%,
-          0% 80%,
-          0% 20%
-        );
-      }
+        clip-path: none !important;
+        border-radius: 12px;
     }
     @media (max-width: 900px) {
       .hex-card.auto-flip .hex-inner {
