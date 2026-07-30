@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA1-Collaboration-CTA</title>
+  <title>SA-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/webp" href="favicon.webp">
   <link rel="icon" sizes="64x64" href="favicon.webp">
@@ -108,20 +108,25 @@
       }
     }
     .left-title {
+      display: inline-block;
+      padding: 12px 42px;
+      background: rgba(0, 0, 0, 0.45);
+      border-radius: 26px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #fff;
       font-size: 26px;
       font-weight: 800;
-      margin-bottom: 18px;
-      line-height: 1.6;
-      color: rgba(255, 255, 255, 1);
-      text-shadow: 0 0 6px rgba(0,0,0,0.35);
       text-align: center;
-      width: 100%;
+      margin: 0 auto 22px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.35);
+      text-shadow: 0 0 6px rgba(0,0,0,0.35);
     }
     .left-subtitle {
-      font-size: 18px;
+      font-size: 20px;
       color: rgba(255, 255, 255, 0.85);
       margin-bottom: 14px;
-      line-height: 1.6; 
+      line-height: 1.7; 
       text-align: center;
       width: 100%;
     }
@@ -170,6 +175,7 @@
       overflow: hidden;
       text-decoration: none;
       color: inherit;
+      max-width: 90%;
       transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
     }
     .platform-card::before {
@@ -219,7 +225,7 @@
       font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      margin-top: 6px;
+      margin-top: 14px;
       color: rgb(0, 255, 170);
       text-decoration: none;
       display: inline-block;
@@ -245,7 +251,8 @@
     .packages-row {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 6px;
+      gap: 10px;
+      justify-content: center;
     }
     @media (max-width: 900px) {
       .packages-row {
@@ -872,7 +879,7 @@
       <div class="left-panel">
         <div class="left-title">👇 Choose a platform to start your project 👇 </div>
         <div class="left-subtitle">
-         Equipped with secure professional automation on both web and mobile.
+         Powered by secure automation on web and mobile, designed with fully transparent project structures.
         </div>
         <div class="platform-row">
           <a class="platform-card"
@@ -896,7 +903,7 @@
             </div>
             <div class="platform-name">Start working at Discord</div>
             <div class="platform-desc">
-             A secure and fast Discord hub with professional automation
+             A secure and fast Discord hub with professional automation. Optimized for high‑trust client communication and seamless workflow delivery.
             </div>
             <div class="platform-details">
               • Private communication workspace for each client<br />
