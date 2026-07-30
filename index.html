@@ -19,7 +19,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>SA-Collaboration-CTA</title>
+  <title>SA1-Collaboration-CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/webp" href="favicon.webp">
   <link rel="icon" sizes="64x64" href="favicon.webp">
@@ -161,7 +161,8 @@
     .platform-card {
       position: relative;
       border-radius: var(--radius-md);
-      padding: 10px 20px 20px;
+      width: 50%;
+      padding: 14px 24px 24px;
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(2px);
@@ -175,14 +176,14 @@
     .platform-card::before {
       content: "";
       position: absolute;
-      inset: -40%;
+      inset: -30%;
       background: radial-gradient(circle at 0% 0%, rgba(59, 180, 255, 0.18), transparent 60%);
       opacity: 0;
       transition: opacity var(--transition-fast);
     }
     .platform-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 20px 46px rgba(0, 0, 0, 0.9);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
       border-color: rgba(184, 107, 255, 0.7);
     }
     .platform-card:hover::before {
