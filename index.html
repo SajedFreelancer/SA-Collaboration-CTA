@@ -21,7 +21,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>Sajed Abbaszaeh 1– SA Collaboration CTA</title>
+  <title>Sajed Abbaszaeh – SA Collaboration CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/webp" href="favicon.webp">
   <link rel="icon" sizes="64x64" href="favicon.webp">
@@ -85,6 +85,10 @@
       pointer-events: none;
       z-index: -1;
     }
+    :root {
+      --text-main: #1A1A1A;
+      --text-muted: #4A4A4A;
+    }
     .page {
       max-width: 1400px;
       width: 100%;
@@ -118,6 +122,7 @@
       border: 1px solid rgba(255, 255, 255, 0.11);
       backdrop-filter: blur(2px);
       color: var(--accent-blue);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .main-grid {
       display: grid;
@@ -139,7 +144,7 @@
       border-radius: 26px;
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      color: #fff;
+      color: #1A1A1A;
       font-size: 24px;
       font-weight: 800;
       text-align: center;
@@ -147,7 +152,7 @@
       flex-direction: column;
       align-items: center;
       box-shadow: 0 3px 12px rgba(0,0,0,0.35);
-      text-shadow: 0 0 6px rgba(0,0,0,0.35);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
       background: rgba(0,0,0,0.45);
       padding: 10px 16px;
       border-radius: 22px;
@@ -155,13 +160,11 @@
     }
     .left-substrate {
       font-size: 16px;
-      color: rgba(255, 255, 255, 0.92);
+      color: #2A2A2A;
       margin-bottom: 14px;
       line-height: 1.7; 
       text-align: center;
-      text-shadow:
-        0 0 6px rgba(255, 255, 255, 0.25),
-        0 0 12px rgba(0, 180, 255, 0.18);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .platform-label {
       position: relative;
@@ -173,13 +176,14 @@
       margin-bottom: 8px;
       font-size: 15px;
       font-weight: 700;
-      color: #fff;
+      color: #1A1A1A;
       background: rgba(0, 255, 170, 0.30);
       border-radius: 24px;
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       box-shadow: 0 3px 10px rgba(0,0,0,0.35);
       text-align: center;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .left-panel {
       margin-top: 20px;
@@ -241,12 +245,13 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      color: var(--accent-gold);
-      text-shadow: 0 0 6px rgba(246, 196, 83, 0.45);
+      color: #1A1A1A;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .platform-desc {
       font-size: 19px;
-      color: rgba(255, 255, 255, 0.85);
+      color: #2A2A2A;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .platform-link {
       font-size: 15px;
@@ -257,18 +262,19 @@
       text-decoration: none;
       text-align: center;
       display: inline-block;
-      text-shadow: 0 0 6px rgba(0,255,170,0.25);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .platform-details {
       margin-top: 8px;
       font-size: 17px;
-      color: rgba(255, 255, 255, 0.92);
+      color: #2A2A2A;
       line-height: 1.6; 
       font-weight: 500;
       opacity: 0;
       max-height: 0;
       overflow: hidden;
       transition: opacity var(--transition-fast), max-height var(--transition-fast);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .platform-card:hover .platform-details {
       opacity: 1;
@@ -394,6 +400,8 @@
       font-size: 18px;
       font-weight: 700;
       margin-bottom: 20px;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
+      color: #1A1A1A;
     }
     .process-hex-grid {
       display: flex;
@@ -589,23 +597,26 @@
     .profile-name {
       font-size: 23px;
       font-weight: 600;
+      color: #1A1A1A;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .profile-role {
       font-size: 20px;
-      color: #FFFFFF;
+      color: #1A1A1A;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .profile-badge {
       color: var(--accent-gold);
       font-weight: 450;
-      text-shadow:
-        0 0 8px rgba(246, 196, 83, 0.55),
-        0 0 14px rgba(246, 196, 83, 0.35);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .profile-text {
       font-weight: 400;
       text-align: center;
       line-height: 1.55;
       margin-bottom: 26px;
+      color: #2A2A2A;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .upcoming-row {
       margin-bottom: 10px;
@@ -639,9 +650,9 @@
       color: inherit;
     }
     .social-name {
-      color: rgba(255, 255, 255, 0.92);
+      color: #4A4A4A;
       font-weight: 500;
-      text-shadow: 0 0 6px rgba(0,0,0,0.35);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
       text-decoration: none;
       color: inherit;
     }
@@ -658,6 +669,7 @@
       color: var(--accent-blue);
       text-transform: uppercase;
       letter-spacing: 0.12em;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .works-card {
       padding: 12px;
@@ -669,14 +681,11 @@
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 0.14em;
-      color: #E0E0E0;
+      color: #1A1A1A;
       margin-bottom: 8px;
       text-align: center;
       width: 100%;
-      text-shadow: 
-        0 0 6px rgba(0,255,170,0.8),
-        0 0 12px rgba(0,255,170,0.6),
-        0 0 18px rgba(0,255,170,0.4);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
       background: rgba(0,0,0,0.35);
       border-radius: 10px;
       backdrop-filter: blur(4px);
@@ -745,11 +754,13 @@
       font-size: 10px;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: rgba(255, 255, 255, 0.85);
+      color: #4A4A4A;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .work-sub {
       font-size: 10px;
-      color: rgba(255, 255, 255, 0.85);
+      color: #4A4A4A;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     @media (max-width: 900px) {
       .left-panel {
