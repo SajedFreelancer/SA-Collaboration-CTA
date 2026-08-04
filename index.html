@@ -21,7 +21,7 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="UTF-8">
-  <title>Sajed Abbaszaeh – SA Collaboration CTA</title>
+  <title>Sajed Abbaszaeh 1– SA Collaboration CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/webp" href="favicon.webp">
   <link rel="icon" sizes="64x64" href="favicon.webp">
@@ -61,7 +61,29 @@
       justify-content: center;
       align-items: stretch;
       padding: 24px 12px 0;
-      filter: brightness(0.82) contrast(1.03);
+      filter: brightness(0.68) contrast(1.06);
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      pointer-events: none;
+      z-index: -1;
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.32) 0%,
+        rgba(0,0,0,0.12) 40%,
+        rgba(0,0,0,0.00) 100%
+      );
+      pointer-events: none;
+      z-index: -1;
     }
     .page {
       max-width: 1400px;
