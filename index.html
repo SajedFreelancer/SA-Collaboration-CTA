@@ -32,7 +32,7 @@
   </script>
   <!--End Microsoft clarity ananliz -->
   <meta charset="UTF-8">
-  <title>Sajed Abbaszaeh – SA Collaboration CTA</title>
+  <title>Sajed Abbaszaeh 12– SA Collaboration CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/webp" href="favicon.webp">
   <link rel="icon" sizes="64x64" href="favicon.webp">
@@ -65,24 +65,30 @@
     }
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-      background: #000 url("https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/backgrand1.webp?raw=true") center/cover no-repeat;
+      background: #0fb3c8 url("https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/back%203-1.png?raw=true") center/cover no-repeat;
       color: var(--text-main);
       min-height: 100vh;
       display: flex;
+      font-weight: 400;
       justify-content: center;
       align-items: stretch;
       padding: 24px 12px 0;
-      filter: brightness(0.82) contrast(1.03);
+      filter: brightness(0.86) contrast(1.02);
+    }
+    :root {
+      --text-main: #1E1E1E;
+      --text-muted: #3A3A3A;
     }
     .page {
       max-width: 1400px;
       width: 100%;
-      background: rgba(0, 0, 0, 0.22);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.09);
+      background: transparent;
+      border: none;
+      box-shadow: none;
       backdrop-filter: blur(4px);
       border-radius: 26px;
-      padding: 22px 22px 160px;
+      padding: 28px 28px 60px;
+      margin-bottom: 40px;
       transform: scale(0.9);
       transform-origin: top center;
     }
@@ -107,11 +113,12 @@
       border: 1px solid rgba(255, 255, 255, 0.11);
       backdrop-filter: blur(2px);
       color: var(--accent-blue);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .main-grid {
       display: grid;
       grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
-      gap: 20px;
+      gap: 34px;
       margin-bottom: 18px;
     }
     @media (max-width: 900px) {
@@ -121,33 +128,47 @@
         flex-direction: column-reverse;
       }
     }
-    .left-title {
+    .platform-header {
       display: flex;
-      padding: 12px 12px;
-      background: rgba(0, 0, 0, 0.45);
-      border-radius: 26px;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      color: #fff;
+      align-items: flex-start;
+    }
+    .phoenix-icon {
+      width: 140px;
+      height: 140px;
+      margin-left: 20px;
+      margin-Right: 10px;
+      filter: drop-shadow(0 0 12px rgba(255, 140, 0, 0.65));
+      border-radius: 50%;
+      object-fit: contain;
+    }
+    .platform-text {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .platform-description {
+      font-size: 19px;
+      font-weight: 450;
+      color: var(--text-main);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+      line-height: 1.55;
+    }
+    .left-title {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(246, 196, 83, 0.25);
+      backdrop-filter: blur(2px);
+      color: var(--text-main);
       font-size: 24px;
-      font-weight: 800;
+      font-weight: 700;
       text-align: center;
-      margin: 0 auto 22px;
+      margin: 0 0 22px 0;
       flex-direction: column;
       align-items: center;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.35);
-      text-shadow: 0 0 6px rgba(0,0,0,0.35);
-    }
-    .left-subtitle {
-      font-size: 18px;
-      color: rgba(255, 255, 255, 0.92);
-      margin-bottom: 14px;
-      line-height: 1.7; 
-      text-align: center;
-      width: 100%;
-      text-shadow:
-        0 0 6px rgba(255, 255, 255, 0.25),
-        0 0 12px rgba(0, 180, 255, 0.18);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.18);
+      padding: 10px 16px;
+      border-radius: 22px;
     }
     .platform-label {
       position: relative;
@@ -159,13 +180,14 @@
       margin-bottom: 8px;
       font-size: 15px;
       font-weight: 700;
-      color: #fff;
+      color: var(--text-main);
       background: rgba(0, 255, 170, 0.30);
       border-radius: 24px;
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       box-shadow: 0 3px 10px rgba(0,0,0,0.35);
-      text-align: center;
+      text-align: left;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .left-panel {
       margin-top: 20px;
@@ -174,8 +196,8 @@
     .platform-row {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-      margin-bottom: 30px;
+      gap: 22px;
+      margin-bottom: 20px;
     }
     @media (max-width: 700px) {
       .platform-row {
@@ -184,16 +206,16 @@
     }
     .platform-card {
       position: relative;
-      border-radius: var(--radius-md);
-      padding: 14px 24px 24px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 10px 20px 18px;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(246, 196, 83, 0.25);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
       backdrop-filter: blur(2px);
-      box-shadow: 0 0 22px rgba(255, 255, 255, 0.22);
       cursor: pointer;
       overflow: hidden;
       text-decoration: none;
-      color: inherit;
+      color: var(--text-main);
       max-width: 420px;
       transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
     }
@@ -206,9 +228,9 @@
       transition: opacity var(--transition-fast);
     }
     .platform-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
-      border-color: rgba(184, 107, 255, 0.7);
+      transform: translateY(-2px);
+      box-shadow: 0 20px 46px rgba(0, 0, 0, 0.95);
+      border-color: rgba(59, 180, 255, 0.8);
     }
     .platform-card:hover::before {
       opacity: 1;
@@ -227,34 +249,47 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      color: var(--accent-gold);
-      text-shadow: 0 0 6px rgba(246, 196, 83, 0.45);
+      font-weight: 450;
+      color: var(--text-main);
+      font-weight: 700;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.18);
     }
     .platform-desc {
       font-size: 19px;
-      color: rgba(255, 255, 255, 0.85);
+      color: var(--text-main);
+      font-weight: 450;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .platform-link {
-      font-size: 15px;
+      font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      margin-top: 14px;
-      color: rgb(0, 255, 170);
+      margin-top: 7px;
+      font-weight: 500;
       text-decoration: none;
       text-align: center;
       display: inline-block;
-      text-shadow: 0 0 6px rgba(0,255,170,0.25);
+      padding: 6px 18px;
+      color: #F6C453;
+      text-shadow:
+        0 1px 1px rgba(0,0,0,0.22),
+        0 2px 4px rgba(0,0,0,0.18);
+      transition: 0.18s ease-out;
+    }
+    .platform-link:hover {
+      transform: translateY(-2px);
     }
     .platform-details {
       margin-top: 8px;
       font-size: 17px;
-      color: rgba(255, 255, 255, 0.92);
+      color: var(--text-main);
       line-height: 1.6; 
       font-weight: 500;
       opacity: 0;
       max-height: 0;
       overflow: hidden;
       transition: opacity var(--transition-fast), max-height var(--transition-fast);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.12);
     }
     .platform-card:hover .platform-details {
       opacity: 1;
@@ -293,13 +328,15 @@
     .package-card {
       border-radius: var(--radius-md);
       padding: 14px 15px;
-      background: transparent;
-      border: none !important;
-      box-shadow: none !important;
+      background: rgba(255, 255, 255, 0.22);
+      border: 1px solid rgba(246, 196, 83, 0.25);
+      backdrop-filter: blur(4px);
+      box-shadow: none;
       backdrop-filter: blur(2px);
       position: relative;
       overflow: hidden;
       cursor: pointer;
+      font-weight: 500;
       transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
     }
     .package-card::before {
@@ -312,8 +349,8 @@
     }
     .package-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 20px 46px rgba(0, 0, 0, 0.9);
-      border-color: rgba(246, 196, 83, 0.7);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      border-color: rgba(246, 196, 83, 0.55);
     }
     .package-card:hover::before {
       opacity: 1;
@@ -344,7 +381,7 @@
       display: none;
       justify-content: center;
       backdrop-filter: blur(14px);
-      background: rgba(0, 0, 0, 0.35);
+      background: rgba(255, 255, 255, 0.18);
       border-radius: 16px;
       z-index: 999;
     }
@@ -363,12 +400,12 @@
       padding-top: 140%;
     }
     .packages-overlay .package-card:hover {
-      transform: none !important;
-      box-shadow: none !important;
-      border-color: transparent !important;
+      transform: none;
+      box-shadow: none;
+      border-color: transparent;
     }
     .packages-overlay .package-card::before {
-      display: none !important;
+      display: none;
     }
     .packages-overlay .collab1-label {
       width: 100%;
@@ -377,14 +414,22 @@
       display: block;
     }
     .collab2-label {
+      display: inline-block;
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 600;
+      text-align: left;
       margin-bottom: 20px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.18);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(246, 196, 83, 0.25);
+      backdrop-filter: blur(2px);
     }
     .process-hex-grid {
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 26px;
       align-items: center;
       flex-shrink: 0;
       max-width: none;
@@ -416,7 +461,7 @@
         0% 25%
       );
       z-index: -1;
-     }
+    }
     .hex-card {
       width: 140px;
       height: 160px;
@@ -526,7 +571,7 @@
     .tree-container {
       position: absolute;
       right: 0;
-      top: 350px;
+      top: 360px;
       transform: translate(-15px, -40%);
       z-index: 2;
       pointer-events: none;
@@ -541,12 +586,32 @@
       z-index: 2;
       overflow: visible;
     }
+    .profile-semicircle {
+      width: 114%;
+      min-height: 210px;
+      height: auto;
+      margin-top: -12px;
+      opacity: 0.78;
+      background: url("https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/My%20Profile%20back.webp?raw=true");
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat;
+      border: none;
+      backdrop-filter: none;
+      box-shadow: none;
+      padding: 15px 17px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      overflow: visible; 
+    }
     .profile-card {
       padding: 14px 14px 12px;
-      margin-bottom: 80px;
+      margin-bottom: 70px;
     }
     .profile-top {
-       display: flex;
+      display: flex;
       flex-direction: column;
       align-items: center;
       gap: 10px;
@@ -574,24 +639,32 @@
     }
     .profile-name {
       font-size: 23px;
-      font-weight: 600;
+      font-weight: 700;
+      margin-top: 5px;
+      color: var(--text-main);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.18);
     }
     .profile-role {
       font-size: 20px;
-      color: #FFFFFF;
+      color: var(--text-main);
+      font-weight: 600;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.18);
     }
     .profile-badge {
-      color: var(--accent-gold);
-      font-weight: 450;
+      color: #F6C453;
       text-shadow:
-        0 0 8px rgba(246, 196, 83, 0.55),
-        0 0 14px rgba(246, 196, 83, 0.35);
+        0 1px 1px rgba(0,0,0,0.22),
+        0 2px 4px rgba(0,0,0,0.18);
+      font-weight: 450;
     }
     .profile-text {
-      font-weight: 400;
+      font-weight: 450;
       text-align: center;
-      line-height: 1.55;
       margin-bottom: 26px;
+      max-width: 90%;
+      line-height: 1.45;
+      color: var(--text-main);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.18);
     }
     .upcoming-row {
       margin-bottom: 10px;
@@ -614,36 +687,32 @@
       object-fit: cover;
     }
     .social-link img {
-      filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.15));
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 50%;
     }
     .social-link {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 4px;
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.18));
       text-decoration: none;
       color: inherit;
     }
     .social-name {
-      color: rgba(255, 255, 255, 0.92);
-      font-weight: 500;
-      text-shadow: 0 0 6px rgba(0,0,0,0.35);
+      color: #4A4A4A;
+      font-weight: 350;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.18);
       text-decoration: none;
       color: inherit;
     }
     .social-link:hover {
-      background: rgba(255, 255, 255, 0.06);
-      border-color: rgba(59, 180, 255, 0.7);
-      transform: translateY(-1px);
+      background: rgba(255, 255, 255, 0.45);
+      border-color: rgba(246, 196, 83, 0.55);
+      transform: translateY(-2px);
     }
     .social-link img:hover {
       filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.25));
-    }
-    .profile-medal {
-      font-size: 10px;
-      color: var(--accent-blue);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
     }
     .works-card {
       padding: 12px;
@@ -653,25 +722,24 @@
     }
     .works-title {
       font-size: 12px;
+      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.14em;
-      color: #E0E0E0;
+      color: var(--text-main);
       margin-bottom: 8px;
       text-align: center;
       width: 100%;
-      text-shadow: 
-        0 0 6px rgba(0,255,170,0.8),
-        0 0 12px rgba(0,255,170,0.6),
-        0 0 18px rgba(0,255,170,0.4);
-      background: rgba(0,0,0,0.35);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.18);
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(246, 196, 83, 0.25);
       border-radius: 10px;
-      backdrop-filter: blur(4px);
+      backdrop-filter: blur(2px);
       -webkit-backdrop-filter: blur(4px);
     }
     .works-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 8px;
+      gap: 18px;
     }
     @media (max-width: 900px) {
       .works-grid {
@@ -684,7 +752,7 @@
       padding: 0px;
       background: transparent;
       border: none;
-      box-shadow: none !important;
+      box-shadow: none;
       backdrop-filter: blur(2px);
       cursor: pointer;
       overflow: hidden;
@@ -710,10 +778,10 @@
       opacity: 1;
     }
     .work-image {
-         width: 100%;
-         padding-top: 100%;
-         position: relative;
-         overflow: hidden;
+      width: 100%;
+      padding-top: 100%;
+      position: relative;
+      overflow: hidden;
     }
     .work-image img {
       position: absolute;
@@ -731,11 +799,15 @@
       font-size: 10px;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: rgba(255, 255, 255, 0.85);
+      font-weight: 350;
+      color: var(--text-main);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.18);
     }
     .work-sub {
       font-size: 10px;
-      color: rgba(255, 255, 255, 0.85);
+      color: var(--text-main);
+      font-weight: 350;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.18);
     }
     @media (max-width: 900px) {
       .left-panel {
@@ -862,7 +934,7 @@
     @media (max-width: 900px) {
       .hex-card::before,
       .hex-face {
-        clip-path: none !important;
+        clip-path: none;
         border-radius: 12px;
     }
     @media (max-width: 900px) {
@@ -900,9 +972,14 @@
   <div class="page">
     <section class="main-grid">
       <div class="left-panel">
-        <div class="left-title">👇 Choose a platform to start your project 👇 </div>
-        <div class="left-subtitle">
-         Powered by secure automation on web and mobile, designed with fully transparent project structures.
+        <div class="platform-header">
+          <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/Gognos%20Ezoteriz.webp?raw=true" alt="Phoenix" class="phoenix-icon">
+          <div class="platform-text">
+            <div class="left-title">👇 Choose a platform to start your project 👇</div>
+            <p class="platform-description">
+              Powered by secure automation on web and mobile, designed with fully transparent project structures - Professional Catalog - visual impact.
+            </p>
+          </div>
         </div>
         <div class="platform-row">
           <a class="platform-card"
@@ -925,7 +1002,7 @@
               Discord Platform
             </div>
             <div class="platform-desc">
-                A secure and fast Discord hub for any project with professional automation, and advanced role‑based access.
+              A secure and fast Discord hub for any project with professional automation, and advanced role‑based access.
             </div>
             <div class="platform-details">
               • Private workspace for each client<br />
@@ -943,7 +1020,7 @@
                 fetch('https://script.google.com/macros/s/AKfycbwrKctyl9JwaD-oP50Ex2q-_2S3nfYOWm8ABvpq4q2h4HNHbGU81fMv2YH9t5Tt5HuX/exec', {
                   method: 'POST',
                   body: JSON.stringify({
-                    link: 'towns',
+                    link: 'ReeJob',
                     time: new Date().toISOString(),
                     referrer: document.referrer,
                     ua: navigator.userAgent
@@ -952,11 +1029,11 @@
             ">
             <div class="platform-label">Second Platform</div>
             <div class="platform-title">
-              <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/ReeJob%20icone.webp?raw=true" alt="Towns icon" class="platform-icon">
+              <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/ReeJob%20icone.webp?raw=true" alt="ReeJob icon" class="platform-icon">
               ReeJob Platform
             </div>
             <div class="platform-desc">
-               A modern Upwork-style platform with bank payments, crypto escrow, and secure blockchain-based collaboration
+              A modern Upwork-style platform with bank payments, crypto escrow, and secure blockchain-based collaboration
             </div>
             <div class="platform-details">
               • After signup, find me via search or CTA.<br />
@@ -987,7 +1064,7 @@
             </div>
           </div>
         </div>
-        <div class="collab2-label">Collaboration stages : </div>
+        <div class="collab2-label">Collaboration stages :</div>
         <div class="process-hex-grid">
           <div class="hex-row">
             <div class="hex-card step-1">
@@ -1038,25 +1115,27 @@
         <div class="right-panel-content">
           <div class="profile-card">
             <div class="profile-top">
-              <div class="profile-avatar">
-                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/SA%20Profile.webp?raw=true" alt="Profile" />
-              </div>
-              <div class="profile-info">
-                <div class="profile-name">Sajed Abbaszadeh</div>
-                <div class="profile-role">Logo designer</div>
-                <div class="profile-badge">Crafting Timeless Brands with Strategic Simplicit</div>
+              <div class="profile-semicircle">
+                <div class="profile-avatar">
+                  <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/SA%20Profile1-no%20back.png?raw=true" alt="Profile" />
+                </div>
+                <div class="profile-info">
+                  <div class="profile-name">My name</div>
+                  <div class="profile-role">Logo designer</div>
+                  <div class="profile-badge">Crafting Timeless Brands with Strategic Simplicit</div>
+                </div>
+                <p class="profile-text">
+                  I focus on logo design and logo systems. My work is structured for clients who want clear packages, secure collaboration, and visual consistency across platforms .
+                </p>
               </div>
             </div>
-            <p class="profile-text">
-              I focus on logo design and logo systems. My work is structured for clients who want clear packages, secure collaboration, and visual consistency across platforms .
-            </p>
             <div class="social-row upcoming-row">
               <a class="social-link" href="#" onclick="return false;">
-                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/Toptal-soon.webp?raw=true" alt="Toptal soon" class="social-icon">
+                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/Toptal%20soon.webp?raw=true" alt="Toptal soon" class="social-icon">
                 <span class="social-name">Soon</span>
               </a>
               <a class="social-link" href="#" onclick="return false;">
-                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/coming-soon-icone.webp?raw=true" alt="Coming Soon Icon" class="social-icon">
+                <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/coming%20soon%20icone.webp?raw=true" alt="Coming Soon Icon" class="social-icon">
                 <span class="social-name">Soon</span>
               </a>
             </div>
