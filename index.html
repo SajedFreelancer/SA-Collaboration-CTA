@@ -32,7 +32,7 @@
   </script>
   <!--End Microsoft clarity ananliz -->
   <meta charset="UTF-8">
-  <title>Sajed Abbaszaeh – SA Collaboration CTA</title>
+  <title>Sajed Abbaszaeh 2– SA Collaboration CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/webp" href="favicon.webp">
   <link rel="icon" sizes="64x64" href="favicon.webp">
@@ -384,7 +384,7 @@
     .phoenix-container {
       position: absolute;
       left: 0;
-      top: 500px;
+      top: 530px;
       transform: translate( 30px, 0);
       z-index: 5; 
       pointer-events: none; 
@@ -820,14 +820,21 @@
     }
     @media (max-width: 768px) {
       .profback-container {
+        display: none;
+      }
+      .mobprofback-container {
+        display: block;
         top: 0px;
         right: -60px;
         transform: none;
         z-index: 3;
-        background-image: url("https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/Prof%20back%20Mob.webp?raw=true");
-        background-size: cover;
-        background-position: center;
-        background: none;
+      }
+      .cosmic-mobprofback {
+      width: 440px;
+      opacity: 1;
+      filter: none;
+      transform: scaleY(0.92);
+      transform-origin: top center;
       }
     }
     @media (max-width: 768px) {
@@ -1101,6 +1108,9 @@
       <div class="right-panel">
         <div class="profback-container">
           <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/Profile%20Back%201.webp?raw=true" alt="cosmic-profback" class="cosmic-profback">
+        </div>
+        <div class="mobprofback-container">
+          <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/Prof%20back%20Mob.webp?raw=true" alt="cosmic-mobprofback" class="cosmic-mobprofback">
         </div>
         <div class="tree-container">
           <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/Tree%20idea.webp?raw=true" alt="cosmic-tree" class="cosmic-tree">
