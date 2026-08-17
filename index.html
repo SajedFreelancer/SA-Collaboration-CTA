@@ -32,7 +32,7 @@
   </script>
   <!--End Microsoft clarity ananliz -->
   <meta charset="UTF-8">
-  <title>Sajed Abbaszaeh – SA Collaboration CTA</title>
+  <title>Sajed Abbaszaeh 1– SA Collaboration CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/webp" href="favicon.webp">
   <link rel="icon" sizes="64x64" href="favicon.webp">
@@ -541,25 +541,32 @@
       z-index: 2;
       overflow: visible;
     }
-    .profile-semicircle {
-      width: 600px;
-      min-height: 210px;
-      height: auto;
-      margin-top: -12px;
-      opacity: 0.78;
-      background: url("https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/Profile%20back%201.webp?raw=true ");
-      background-size: contain;
+    .profile-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 130%; 
+      height: 210px;
+      background-image: url("https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/Profile%20back%201.webp?raw=true");
+      background-size: cover;
       background-position: center top;
-      background-repeat: no-repeat;
-      border: none;
-      backdrop-filter: none;
-      box-shadow: none;
+      z-index: 5;
+      pointer-events: none;
+    }
+    .profile-content {
+      position: relative;
+      z-index: 6;
+    }
+    .profile-semicircle {
+      position: relative;
+      width: 114%;
+      min-height: 210px;
+      margin-top: -12px;
       padding: 15px 17px;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      overflow: visible; 
     }
     .profile-card {
       padding: 14px 14px 12px;
@@ -1062,17 +1069,20 @@
           <div class="profile-card">
             <div class="profile-top">
               <div class="profile-semicircle">
-                <div class="profile-avatar">
-                  <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/SA%20Profile.webp?raw=true" alt="Profile" />
+                <div class="profile-bg"></div>
+                <div class="profile-content">
+                  <div class="profile-avatar">
+                    <img src="https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/image/SA%20Profile.webp?raw=true" alt="Profile" />
+                  </div>
+                  <div class="profile-info">
+                    <div class="profile-name">Sajed Abbaszadeh</div>
+                    <div class="profile-role">Logo designer</div>
+                    <div class="profile-badge">Crafting Timeless Brands with Strategic Simplicit</div>
+                  </div>
+                <p class="profile-text">
+                  My work is for clients who want clear packages, secure collaboration, and visual consistency across platforms
+                </p>
                 </div>
-                <div class="profile-info">
-                  <div class="profile-name">Sajed Abbaszadeh</div>
-                  <div class="profile-role">Logo designer</div>
-                  <div class="profile-badge">Crafting Timeless Brands with Strategic Simplicit</div>
-                </div>
-              <p class="profile-text">
-                My work is for clients who want clear packages, secure collaboration, and visual consistency across platforms
-              </p>
               </div>
             </div>
             <div class="social-row upcoming-row">
