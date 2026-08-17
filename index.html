@@ -32,7 +32,7 @@
   </script>
   <!--End Microsoft clarity ananliz -->
   <meta charset="UTF-8">
-  <title>Sajed Abbaszaeh – SA Collaboration CTA</title>
+  <title>Sajed Abbaszaeh 3– SA Collaboration CTA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/webp" href="favicon.webp">
   <link rel="icon" sizes="64x64" href="favicon.webp">
@@ -395,7 +395,7 @@
       position: absolute;
       left: 0;
       top: 600px;
-      transform: translate(-10px, 0);
+      transform: translate( 40px, 0);
       z-index: 5; 
       pointer-events: none; 
     }
@@ -805,6 +805,8 @@
       .left-panel .packages-row { 
         order: 6;
       }
+      .left-panel .phoenix-container {
+        order: 7;
     }
     @media (hover: hover) {
       .platform-card:hover .platform-details {
@@ -824,6 +826,34 @@
         right: -60px;
         transform: none;
         z-index: 2;
+      }
+    }
+    @media (max-width: 768px) {
+      .profback-container {
+        top: 140px;
+        right: -40px;
+        transform: none;
+        z-index: 3;
+      }
+      .cosmic-profback {
+        width: 300px;
+        transform: scaleY(0.90);
+        transform-origin: top center;
+      }
+    }
+    @media (max-width: 768px) {
+      .phoenix-container {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 40px auto 20px auto;
+        width: fit-content;
+        z-index: 5; 
+      }
+      .phoenix-image {
+        width: 180px;
+        opacity: 1;
       }
     }
     @media (max-width: 420px) {
