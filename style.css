@@ -346,6 +346,7 @@
       font-size: 18px;
       font-weight: 700;
       margin-bottom: 20px;
+      color: #fff;
     }
     .phoenix-container {
       position: absolute;
@@ -580,11 +581,11 @@
     }
     .profile-role {
       font-size: 20px;
-      color: #FFFFFF;
+      color: #fff;
       font-weight: 600;
     }
     .profile-badge {
-      color: var(--accent-gold);
+      color: #fff;
       font-weight: 450;
       text-shadow:
         0 0 8px rgba(246, 196, 83, 0.55),
