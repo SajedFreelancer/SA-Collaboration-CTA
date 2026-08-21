@@ -41,7 +41,7 @@
       box-shadow: 0 30px 80px rgba(0, 0, 0, 0.09);
       backdrop-filter: blur(4px);
       border-radius: 26px;
-      padding: 28px 28px 60px;
+      padding: 28px 28px 20px;
       transform: scale(0.9);
       transform-origin: top center;
     }
