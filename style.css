@@ -771,6 +771,26 @@
       .left-panel .phoenix-container {
         order: 7;
     }
+    @media (max-width: 600px) {
+      body {
+        background-size: contain;
+      }
+    }
+    @media (max-width: 600px) {
+      .page {
+        backdrop-filter: blur(1px);
+      }
+    }
+    @media (max-width: 600px) {
+      body {
+        filter: none;
+      }
+    }
+    @media (max-width: 600px) {
+      .page {
+        transform: scale(1);
+      }
+    }
     @media (hover: hover) {
       .platform-card:hover .platform-details {
           opacity: 1;
