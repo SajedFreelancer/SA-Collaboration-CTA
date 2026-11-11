@@ -280,7 +280,7 @@
     .package-card:hover {
       transform: translateY(-3px);
       box-shadow: 0 20px 46px rgba(0, 0, 0, 0.9);
-      border-color: none;
+      border-color: rgba(246, 196, 83, 0.7);
     }
     .package-card:hover::before {
       opacity: 1;
