@@ -24,7 +24,7 @@
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #000 url("https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/Backgrond.webp?raw=true") center/cover no-repeat;
+      background: #1E222A center/cover no-repeat;
       color: var(--text-main);
       min-height: 100vh;
       display: flex;
@@ -525,7 +525,7 @@
       width: 440px;
       height: 350px;
       pointer-events: none;
-      background-image: url("https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/My%20image/Profback%20Desk.webp?raw=true");
+      background-image: url("https://github.com/SajedFreelancer/SA-Collaboration-CTA/blob/main/My%20image/Back-prof2.webp?raw=true");
       background-size: cover;
       background-position: center;
     }
